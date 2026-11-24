@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crownex - Sewa Board Game & Party Game</title>
+  <!-- Menghubungkan huruf Poppins dan file CSS (pertemuan 4) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER: nama usaha, menu, dan tombol utama -->
+  <header>
+    <img class="logo" src="img/logo.png" alt="Logo Crownex">
+    <h1>Crownex</h1>
+    <p><em>rent • play • fun</em></p>
+    <nav>
+      <a href="#tentang">Tentang</a> 
+      <a href="#produk">Produk</a> 
+      <a href="#kontak">Kontak</a>
+    </nav>
+
+    <div class="hero">
+      <h2>Bosen pas kumpul? Sewa aja gamenya!</h2>
+      <p>Uno, Monopoly, Stacko, sampai Werewolf siap dianter ke kos atau tempat nongkrongmu. Murah, praktis, dan pasti seru.</p>
+      <a class="tombol-utama" href="#kontak">Sewa Sekarang!</a>
+      <img src="img/hero.jpg" alt="Gratis ongkir untuk area kampus & sekitarnya 🛵">
+    </div>
+  </header>
+
+  <!-- Tulisan berjalan, cuma pakai CSS -->
+  <div class="running-text">
+    <p>🎲 Mulai Rp7.000/hari &nbsp;•&nbsp; 🚚 Antar-jemput ke kos &amp; tempat wisata &nbsp;•&nbsp; 🃏 Game bersih &amp; lengkap &nbsp;•&nbsp; 🎲 Mulai Rp7.000/hari &nbsp;•&nbsp; 🚚 Antar-jemput ke kos &amp; tempat wisata &nbsp;•&nbsp; 🃏 Game bersih &amp; lengkap</p>
+  </div>
+
+  <main>
+
+    <!-- BAGIAN TENTANG -->
+    <section id="tentang">
+      <h2>Tentang Kami</h2>
+      <p>Crownex adalah usaha jasa sewa <strong>board game &amp; party game harian</strong> untuk anak muda usia 15-25 tahun. Kumpul bareng temen tapi udah kehabisan ide? Gak perlu beli game mahal, tinggal sewa, main, lalu kembalikan.</p>
+      <img src="img/suasana.jpg" alt="Suasana bermain board game bersama teman">
+
+      <h3>Kenapa Pilih Crownex?</h3>
+      <ul>
+        <li>Harga ramah kantong mahasiswa dan pelajar</li>
+        <li>Game bersih, lengkap, dan siap dimainkan</li>
+        <li>Ada panduan cara bermain yang gampang dipahami</li>
+        <li>Bisa diantar ke kos, kampus, atau tempat wisata</li>
+      </ul>
+
+      <h3>Cara Pemesanan</h3>
+      <ol>
+        <li>Pilih game atau paket yang kamu mau</li>
+        <li>Chat kami lewat WhatsApp</li>
+        <li>Game diantar, mainkan sepuasnya, lalu kami jemput kembali</li>
+      </ol>
+    </section>
+
+    <!-- BAGIAN PRODUK -->
+    <section id="produk">
+      <h2>Produk dan Harga</h2>
+
+      <h3>Kategori Permainan</h3>
+      <div class="kategori">
+        <div class="kartu-kategori"><span>🃏</span>Kartu</div>
+        <div class="kartu-kategori"><span>🎲</span>Papan</div>
+        <div class="kartu-kategori"><span>🧱</span>Jenga</div>
+        <div class="kartu-kategori"><span>🎮</span>Lainnya</div>
+      </div>
+
+      <h3>Katalog Permainan</h3>
+      <table>
+        <thead>
+          <tr><th>Permainan</th><th>Kategori</th><th>Harga</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>UNO</td><td>Kartu</td><td>Rp7.000/hari</td></tr>
+          <tr><td>Poker</td><td>Kartu</td><td>Rp7.000/hari</td></tr>
+          <tr><td>Kartu Wayang</td><td>Kartu</td><td>Rp7.000/hari</td></tr>
+          <tr><td>Ludo</td><td>Papan</td><td>Rp7.000/hari</td></tr>
+          <tr><td>Ular Tangga</td><td>Papan</td><td>Rp10.000/hari</td></tr>
+          <tr><td>Monopoly</td><td>Papan</td><td>Rp15.000/hari</td></tr>
+          <tr><td>Stacko</td><td>Jenga</td><td>Rp7.000/hari</td></tr>
+          <tr><td>Puzzle</td><td>Jenga</td><td>Rp10.000/hari</td></tr>
+          <tr><td>Kubus</td><td>Jenga</td><td>Rp7.000/hari</td></tr>
+          <tr><td>Catur</td><td>Lainnya</td><td>Rp7.000/hari</td></tr>
+          <tr><td>PlayStation</td><td>Lainnya</td><td>Rp100.000/hari</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Paket Hemat</h3>
+      <div class="paket">
+        <div class="kartu-paket">
+          <h4>Paket 3 Game</h4>
+          <p class="harga">Rp13.000<small>/hari</small></p>
+          <p>Pilih tiga game dalam satu paket untuk seharian bermain.</p>
+        </div>
+        <div class="kartu-paket unggulan">
+          <h4>Paket Party Werewolf</h4>
+          <p class="harga">Rp20.000<small>/hari</small></p>
+          <p>Werewolf lengkap dengan kartu peran dan panduan moderator, plus 2 game ringan untuk 8-12 orang.</p>
+        </div>
+      </div>
+      <p class="catatan">*Ongkos kirim tambahan menyesuaikan jarak. Keterlambatan atau komponen yang hilang/rusak dikenakan denda atau penggantian.</p>
+
+      <!-- Tempat video YouTube: tempel kode iframe dari YouTube di sini -->
+    </section>
+
+    <!-- BAGIAN KONTAK -->
+    <section id="kontak">
+      <h2>Hubungi Kami</h2>
+      <p>Jl. Kampus Raya No. 12<br>Purwokerto, Jawa Tengah</p>
+      <p>
+        Instagram: @crownex.id<br>
+        TikTok: @crownex.id<br>
+        Email: halo@crownex.id
+      </p>
+      <p>
+        <a class="tombol-wa" href="https://wa.me/6287718182781?text=Halo%20Crownex,%20saya%20mau%20sewa%20game" target="_blank">Pesan via WhatsApp</a>
+      </p>
+
+      <form action="#" method="post">
+        <label for="nama">Nama</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="wa">Nomor WhatsApp</label><br>
+        <input type="tel" id="wa" name="wa" placeholder="0812..." required><br><br>
+
+        <label for="paket">Mau sewa apa?</label><br>
+        <select id="paket" name="paket">
+          <option>Satu game (lihat katalog)</option>
+          <option>Paket 3 Game</option>
+          <option>Paket Party Werewolf</option>
+        </select><br><br>
+
+        <label for="pesan">Pesan</label><br>
+        <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis game, tanggal sewa, dan lokasi antar ya"></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+      </form>
+      <!-- Tempat peta: tempel kode iframe dari Google Maps di sini -->
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Crownex. Jl. Kampus Raya No. 12, Purwokerto.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+/* 1. Pengaturan Umum */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #3b2208;
+    line-height: 1.6;
+    background-color: #fff3c4;
+    background-image: radial-gradient(#f0d98a 2px, transparent 2px);
+    background-size: 26px 26px;
+}
+
+/* 2. Header dan menu */
+header {
+    background-color: #4a2a07;
+    color: #fde68a;
+    text-align: center;
+    padding: 32px 16px 48px;
+    border-bottom: 6px solid #f59e0b;
+}
+header h1 {
+    margin: 0;
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+header p { margin: 4px 0 0; }
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+/* menu berbentuk rounded square berwarna */
+nav a {
+    color: #3b2208;
+    background-color: #fde68a;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 10px 26px;
+    border: 3px solid #fff;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0 #f59e0b;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+nav a:nth-child(2) { background-color: #fbbf24; }
+nav a:nth-child(3) { background-color: #fb923c; }
+nav a:hover {
+    transform: translate(-2px, -3px) rotate(-3deg);
+    box-shadow: 6px 6px 0 #f59e0b;
+}
+
+/* Logo di header */
+.logo { width: 110px; max-width: 110px; margin: 0 auto 8px; border-radius: 0; }
+
+/* Bagian hero di dalam header */
+.hero {
+    max-width: 720px;
+    margin: 32px auto 0;
+    padding: 24px;
+    background-color: #fde68a;
+    color: #3b2208;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 #f59e0b;
+}
+.hero h2 {
+    font-size: 28px;
+    line-height: 1.25;
+    border: none;
+    padding: 0;
+    margin: 0 0 8px;
+    color: #4a2a07;
+}
+.tombol-utama {
+    display: inline-block;
+    background-color: #f59e0b;
+    color: #3b2208;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 12px 32px;
+    border: 3px solid #4a2a07;
+    border-radius: 30px;
+    box-shadow: 4px 4px 0 #4a2a07;
+    transition: transform 0.2s;
+}
+.tombol-utama:hover { transform: translate(-2px, -2px) rotate(-2deg); }
+
+/* Tulisan berjalan */
+.running-text {
+    background-color: #f59e0b;
+    border-bottom: 3px solid #4a2a07;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.running-text p {
+    display: inline-block;
+    margin: 0;
+    padding: 8px 0;
+    font-weight: 600;
+    animation: jalan 25s linear infinite;
+}
+@keyframes jalan {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+/* 3. Isi Halaman */
+main { max-width: 960px; margin: 0 auto; padding: 16px; }
+section {
+    background-color: white;
+    border: 3px solid #4a2a07;
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 #4a2a07;
+    padding: 24px;
+    margin: 32px 0;
+}
+h2 {
+    color: #4a2a07;
+    border-bottom: 4px solid #f59e0b;
+    padding-bottom: 8px;
+}
+h3 { color: #7c3f06; }
+li::marker { color: #f59e0b; font-weight: 800; }
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+    display: block;
+    margin: 16px auto;
+}
+.hero img { max-width: 60%; border: 3px solid #4a2a07; }
+#tentang img { max-width: 60%; border: 3px solid #4a2a07; box-shadow: 6px 6px 0 #f59e0b; }
+
+/* 4. Kategori, tabel, dan paket */
+.kategori {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+.kartu-kategori {
+    background-color: #fde68a;
+    border: 3px solid #4a2a07;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: 600;
+    padding: 14px 8px;
+    transition: transform 0.2s;
+}
+.kartu-kategori span { display: block; font-size: 32px; }
+.kartu-kategori:hover { transform: translateY(-6px) rotate(-3deg); background-color: #fbbf24; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #e7d49a; padding: 10px; text-align: left; }
+th { background-color: #4a2a07; color: #fde68a; }
+tbody tr:nth-child(even) { background-color: #fff8dc; }
+tbody tr:hover { background-color: #fde68a; }
+
+.paket {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.kartu-paket {
+    background-color: #4a2a07;
+    color: #fff3c4;
+    border-radius: 16px;
+    padding: 20px;
+}
+.kartu-paket h4 { margin: 0; font-size: 18px; color: #fbbf24; }
+.kartu-paket .harga { font-size: 28px; font-weight: 800; margin: 4px 0; }
+.kartu-paket small { font-size: 14px; font-weight: 400; }
+.kartu-paket.unggulan { background-color: #f59e0b; color: #3b2208; border: 3px solid #4a2a07; }
+.kartu-paket.unggulan h4 { color: #4a2a07; }
+.catatan { font-size: 13px; color: #7c5a2a; }
+
+/* 5. Form */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4a2a07;
+    border-radius: 10px;
+    font-family: inherit;
+    background-color: #fffbea;
+}
+input:focus, select:focus, textarea:focus { outline: 3px solid #fbbf24; }
+
+button {
+    background-color: #4a2a07;
+    color: #fde68a;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 28px;
+    cursor: pointer;
+}
+button:hover { background-color: #f59e0b; color: #3b2208; }
+
+/* 6. Tombol WhatsApp */
+.tombol-wa {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 3px solid #4a2a07;
+    box-shadow: 4px 4px 0 #4a2a07;
+}
+.tombol-wa:hover { transform: translate(-2px, -2px); }
+
+/* 7. Footer */
+footer {
+    background-color: #4a2a07;
+    color: #fde68a;
+    text-align: center;
+    padding: 16px;
+    border-top: 6px solid #f59e0b;
+}
+
+/* 8. Tampilan HP */
+@media (max-width: 600px) {
+    header h1 { font-size: 38px; }
+    .hero h2 { font-size: 22px; }
+    .hero img, #tentang img { max-width: 20%; }
+    .kategori { grid-template-columns: repeat(2, 1fr); }
+    .paket { grid-template-columns: 1fr; }
+    section { box-shadow: 5px 5px 0 #4a2a07; padding: 16px; }
+}
